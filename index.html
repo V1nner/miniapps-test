@@ -12,12 +12,10 @@
 
   <script src="script.js"></script>
   <script>
-    // Инициализация Telegram Web App API
     const tg = window.Telegram.WebApp;
-    tg.ready(); // Важно!  Вызываем ready() сразу после загрузки WebApp API
-    console.log(tg.initDataUnsafe); // Отладочная информация
-    // можно посмотреть данные о пользователе и т.д.
-    tg.expand(); // Разворачиваем на весь экран
+    tg.ready();
+    console.log(tg.initDataUnsafe);
+    tg.expand();
   </script>
 </body>
 </html>
